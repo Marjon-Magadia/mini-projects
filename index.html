@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>50 Mini Projects</title>
+</head>
+
+<body style="margin: 0">
+  <div style="">
+    <center><h1 style=""><span id="project_count"></span> Mini Projects</h1></center>
+    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap;" id="content">
+    </div>
+  </div>
+
+  <script>
+    
+    var projects = [
+      "Expanding Cards",
+      "Blurry Loading",
+      "Hidden Search Widget",
+      "Rotating Navigation",
+      "Progress Steps",
+      "Scrolling Animation",
+      "Split Landing Page",
+      "Form Wave Animation",
+      "Sound Board",
+      "Dad Jokes",
+      "Event KeyCode",
+      "FAQ",
+      "Random Choice Picker",
+      "Navigation Styling",
+      "Incrementing Counter",
+      "Github Profile Card",
+      "Circular Image Slider"
+    ];
+    
+    document.getElementById('project_count').innerHTML = projects.length;
+    var data = "";
+    projects.forEach(project => {
+      project_id = project.toLowerCase().replace(/ /g, "_")
+      data += `<a href="./projects/${project_id}/home.html" target="_blank" style="text-decoration:none; color: black; margin-top:10px;">
+        <center>
+          <div style="border: 1px solid gray;box-shadow: 20px; border-radius: 20px;">
+            <img src="./init/images/${project_id}.jpg" width="200px" height="120px" style="border-radius: 20px 20px 0 0;"/>
+            <div style=" padding: 5px;">
+              <h3>${project}</h3>
+            </div>
+          </div>
+        </center>
+      </a>`
+    });
+    document.getElementById('content').innerHTML = data;
+  </script>
+  <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Random Choice Picker</title>
+</head>
+
+<body>
+    <div>
+        <h1>Random Choice Picker</h1>
+        <div class="container">
+            <h3>Enter all of the choices divided by a comma (',').
+                <br> Press enter when you're done
+            </h3>
+            <textarea placeholder="Enter choices here..." id="textarea"></textarea>
+            <div class="tags-container">
+                <div id="tags">
+                    <span class="tag">Choice 1</span> 
+                    <span class="tag">Choice 2</span>
+                    <span class="tag">Choice 3</span>
+                </div>
+                <button id="random" class="tag-button">Random</button>
+            </div>
+            <div class="result">  
+                <div class="result-ranking">
+                    <b>Rank</b>
+                    <b>Name</b>
+                </div>
+                <div id="result-container">
+    
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
